@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class SongController {
+    val title = listOf("Cosmic Echo", "Neon Fever", "Velvet Bitter", "소란스러운 비밀")
+
     @GetMapping("/songs")
-    fun getSongs(): String {
-        return "Cosmic Echo"
-    }
+    fun getSongs() = title
 }
